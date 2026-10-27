@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prairie Gold Grain | Cash Bids, Futures &amp; Weather</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="util">
+  <div class="in">
+    <div class="l"><span>Scale hours: Mon–Fri 7 a.m.–6 p.m., Sat 8 a.m.–noon</span></div>
+    <div class="r"><a href="tel:5550100123">(555) 010-0123</a><a href="#contact">Directions</a><a href="#contact">Producer login</a><button class="tg" id="themeBtn" type="button">Dark mode</button></div>
+  </div>
+</div>
+
+<header class="hero">
+  <svg viewBox="0 0 220 160" role="img" aria-label="Prairie Gold Grain logo: grain elevator in front of a rising sun">
+    <circle cx="110" cy="84" r="68" fill="#E2A82E"/>
+    <g fill="#2E4552" stroke="#2E4552" stroke-width="1">
+      <path d="M40 84a16 16 0 0 1 32 0v56H40z"/>
+      <path d="M76 74a16 16 0 0 1 32 0v66H76z"/>
+      <path d="M148 84a16 16 0 0 1 32 0v56h-32z"/>
+      <rect x="112" y="40" width="32" height="100"/>
+      <path d="M108 40l20-22 20 22z"/>
+      <rect x="40" y="140" width="140" height="7" fill="#1C2B33" stroke="none"/>
+    </g>
+    <g stroke="#EAF0EE" stroke-width="2" opacity=".7" fill="none">
+      <path d="M56 90v44M92 80v54M164 90v44M120 52h16M120 66h16M120 80h16"/>
+    </g>
+    <path d="M108 40L72 62" stroke="#1C2B33" stroke-width="3"/>
+  </svg>
+  <h1>Prairie Gold Grain</h1>
+  <p>Grain buying, storage and drying for local farms</p>
+</header>
+
+<nav class="main" aria-label="Main">
+  <ul>
+    <li><a href="#bids">Cash bids</a></li>
+    <li><a href="#futures">Futures</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <section id="bids">
+    <h2>Cash bids</h2>
+    <p class="sub">Today’s prices per bushel, delivered to our elevator.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Commodity</th><th>Delivery</th><th>Cash price</th><th>Basis</th><th>Futures month</th><th>Change</th></tr></thead>
+      <tbody id="bidRows"></tbody>
+    </table></div>
+    <p class="note">Sample prices shown. Replace the numbers in the page’s <code>bids</code> list with your daily bids.</p>
+  </section>
+
+  <section id="futures">
+    <h2>Futures</h2>
+    <p class="sub">Delayed exchange quotes, dollars per bushel.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Contract</th><th>Last</th><th>Change</th><th>Open</th><th>High</th><th>Low</th></tr></thead>
+      <tbody id="futRows"></tbody>
+    </table></div>
+    <p class="note">Sample quotes shown. Connect a market data provider or update the <code>futures</code> list to go live.</p>
+  </section>
+
+  <section id="weather">
+    <h2>Weather</h2>
+    <p class="sub">Conditions at the elevator and the five-day outlook.</p>
+    <div class="wx">
+      <div class="box">
+        <div class="temp" id="wxTemp"></div>
+        <div id="wxCond" style="font-weight:600"></div>
+        <dl class="facts" id="wxFacts"></dl>
+      </div>
+      <div class="box"><div class="days" id="wxDays"></div></div>
+    </div>
+    <p class="note">Sample conditions shown. Replace with a weather feed for your location.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p class="sub">What we do at the elevator.</p>
+    <div class="svc">
+      <div class="box"><h3>Grain receiving</h3><p>Corn, soybeans, wheat and milo weighed and graded on arrival.</p></div>
+      <div class="box"><h3>Drying and storage</h3><p>Bin space and drying so your grain holds its value until you sell.</p></div>
+      <div class="box"><h3>Contracts</h3><p>Forward, basis and deferred payment contracts. Call to talk through options.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="in">
+    <div><h2>Visit</h2><p>1200 Elevator Road</p><p>Your Town, USA 00000</p></div>
+    <div><h2>Call</h2><p>(555) 010-0123</p><p>Grain office, Mon–Fri 7 a.m.–6 p.m.</p></div>
+    <div><h2>Harvest season</h2><p>Extended hours in October and November.</p></div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
